@@ -1,0 +1,39 @@
+/* MAIN.CSS: estabeleceremos algumas configurações de texto destintas da forma padrão fixadas em "STYLE.CSS" */
+/* Obs: as configurações aqui postas em determinada parte do texto se destacarão sobre as estabelecidas de forma padrão em "STYLE.CSS" */
+
+.sobre-web-design{
+    align-items: center; /* irá alinhar, ou seja, centralizar tudo o que estiver incluso dentro da tag: "<section class="row sobre-web-design">" */
+                        /* no nosso caso, os textos fixados dentro de "<article>" com a imagem fixada dentro de "<figcaption>" */
+                        justify-content: space-between;
+    }
+
+    .sobre-web-design article {
+        width: 250px;
+
+    }
+
+.sobre-web-design article h1 { /* Configurações para o texto "Web Design", situado na tag "<h1>" */
+    font-size: 70px; /* tamanho da fonte que ficará o texto "Web Design", situado em "<h1>" */
+    line-height: 70px; /* espaço entre a palavra "WEB" e DESIGN" */
+    font-weight: 400; /* o quão em "negrito" tal palavra ou texto ficará */
+    color: #333366; /* cor em que a palavra "WEB DESIGN" situada em "<h1>" ficará */
+}
+
+.sobre-web-design article h2 { /* Configurações para o "Landing Page", incluso dentro de "<h2>" */
+    font-size: 30px;
+    text-transform: uppercase; /* "Landing Page - situado em "<h2>" - ficará em letra maiúscula */
+    letter-spacing: 3px; /* para colocarmos espaçamentos entre letras em "Landing Page" para ficar por exemplo: "L a n d i n g  P a g e" */
+    line-height: 55px; /* criar um espaçamento entre o "<h2>" e "<h1" e entre "<h2>" e "<p>" */
+}
+
+.sobre-web-design article h2,.sobre-web-design article p {
+    color: #3399CC;
+}
+
+.sobre-web-design article p {
+    margin: 10px /*para baixo*/ 0 /*esquerda*/ 30px /* cima */ 0 /* direita */
+}
+
+.sobre-web-design figcaption img {
+    width: 600px;
+}

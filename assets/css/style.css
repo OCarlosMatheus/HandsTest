@@ -1,0 +1,34 @@
+/* STYLE.CSS = configuraremos nossa configuração PADRÃO do HTML */
+/* PS: poderemos mudar todas essas configurações posteriormente nas outras páginas ".CSS" ou até mesmo no nosso HTML. */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Rubik+Bubbles&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+/* Components */
+@import './header.css';
+@import './buttons.css';
+@import './main.css';
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300; /* determinada parte do texto poderá ser modificada em "MAIN.CSS" */
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
