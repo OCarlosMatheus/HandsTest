@@ -1,0 +1,7 @@
+footer ul li { /* criado na aula 8 de Hands-On para configurar a parte dos ícones das redes sociais no rodapé*/
+    margin: 0 30px 0 0; /* cima, direita, baixo, esquerda */
+}
+
+footer ul li a img {
+    width: 30px;
+}

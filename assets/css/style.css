@@ -8,6 +8,8 @@
 @import './header.css';
 @import './buttons.css';
 @import './main.css';
+@import './footer.css';
+@import './responsive.css';
 
 /* Reset CSS */
 * {
@@ -19,6 +21,14 @@
     font-weight: 300; /* determinada parte do texto poderá ser modificada em "MAIN.CSS" */
     vertical-align: baseline;
     text-decoration: none;
+    list-style: none; /*incluso na aula 8, removendo posteriormente o "list-style" de outros elementos à parte" */
+}
+
+body { /*incluso na aula 8*/
+    background-image: url('../images/bolha-background.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* se o design envia uma imagem muito grande, é nosso dever pedir a ele que envie uma imagem com o tamanho reduzido */
 }
 
 .container {

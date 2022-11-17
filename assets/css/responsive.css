@@ -1,0 +1,78 @@
+/* No "responsive.css" trabalharemos com as tags do breakpoint */
+/* Os breakpoints, literalmente falando, são pontos de interrupção. Analisando pelo contexto da CSS, Media Query e Mobile First, são os pontos que a interface do usuário será adaptada para a nova realidade do tamanho de tela, ou densidade de pixels, por exemplo.*/
+
+/* ------> MAX-WIDTH - QUANDO A TELA DO DISPOSITIVO FOR INFERIOR AO ESTABELECIDO <------*/
+
+
+@media (max-width: 1900px) {
+    body {
+        background-size: 950px;
+    }
+}
+
+@media (max-width: 1730px) {
+    body {
+        background-size: 850px;
+    }
+}
+
+@media (max-width: 1520px) {
+    body {
+        background-size: 750px;
+    }
+} 
+
+/* TAMANHO DA TELA DO MEU NOTEBOOK */
+
+@media (max-width: 1366px) {
+    body {
+        background-size: 650px;
+    }
+}
+
+/* ------------------------------  */
+
+@media (max-width: 1320px) {
+    body {
+        background-size: 650px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        background-size: 550px;
+    }
+}
+
+/* ------ CASO NECESSÁRIO UTILIZAR O "background-position" ------ */
+
+/* EXEMPLO:
+
+}
+
+@media (max-width: 1100px) {
+    body {
+        background-position-x: 300px; (EIXO X)
+    }
+} 
+
+PERCEBE-SE que neste caso, as configurações estabelecidas não iriam funcionar pois a configuração padrão estabelecida em "STYLE.CSS" - "background-position: left center;" - irá se sobrepor às das demais páginas.
+Então, neste caso é importante a inclusão de "!important" para que o nosso código possa sobressair ao que foi posto em "STYLE.CSS".
+
+EXEMPLO: 
+
+}
+
+@media (max-width: 1100px) {
+    body {
+        background-position-x: 100px; !important
+    }
+} 
+
+ --------------------------------------------------------------- */
+
+
+  /* ------ LEMBRETE ABAIXO ------ */
+
+/* min-width: tudo o que ultrapassar esse tamanho, irá incorporar o valor estabelecido em "background-size"*/
+/* max-width: tudo o que for menor que o tamanho estabelecido, irá incorporar o valor posto em "background-size*/

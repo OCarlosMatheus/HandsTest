@@ -1,4 +1,6 @@
-header section{
+header section{ /* influenciará em tudo que estiver dentro de "<header class="container>" e "<selection class="row">" */
+    /* ou seja, influenciará na posição do logo "vida full stack" e onde ficará os itens "home, sobre, portifólio, etc */
+    /* no nosso caso, vide configurações abaixo, deixaremos o logo no canto superior esquerdo e os itens no canto superior esquerdo da tela */ 
     
     display: flex;
     flex-direction: row;
@@ -6,14 +8,18 @@ header section{
     align-items: center;
 }
 
-header nav ul {
+header nav ul { /* influenciará direto nos itens "home, portifólio, etc", pois esses se encontram dentro da tag "<ul>" */
+                /* aqui será possível definir se iremos querer nosso item em coluna, linha e até mesmo remover as "bolinhas" que vêm ao lado dos itens na tag "<ul>" */
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
+    /* "list-style: none" pertinente ao menu REMOVIDO */
+    /* Isso porque houve a necessidade de incluir o "list-style" nas configurações gerais - "Style.CSS" - na aula 8, para que os "pontos" ao lado dos ícones das redes sociais fossem retirados" */
+    /* não haveria problema em manter o código, entretanto, quanto mais simplificado, menos "sujo" nosso código fica. */ 
 }
 
-header nav ul li a {
+header nav ul li a { /* influenciará direto em cada palavra da nossa lista "<ur>", as quais estão representadas como links dentro das nossas tags "<a href..>" */
     margin: 0 15px;
     color: #3399cc;
 }
