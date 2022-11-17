@@ -1,6 +1,3 @@
-/* STYLE.CSS = configuraremos nossa configuração PADRÃO do HTML */
-/* PS: poderemos mudar todas essas configurações posteriormente nas outras páginas ".CSS" ou até mesmo no nosso HTML. */
-
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Rubik+Bubbles&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 
@@ -9,26 +6,35 @@
 @import './buttons.css';
 @import './main.css';
 @import './footer.css';
-@import './responsive.css';
+@import './responsive-background.css'; /* POSTO NO LUGAR DE "responsive.css" na aula 11 */
+@import './bootstrap.css'; /* INCLUSO NA AULA 11 */
+@import './responsive-elements.css'; /* INCLUSO NA AULA 11 */
 
-/* Reset CSS */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* ----- Antigo Reset CSS que irá para "BOOTSTRAP.CSS" a partir da aula 11 de elementos responsivos.
+
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300; /* determinada parte do texto poderá ser modificada em "MAIN.CSS" */
+    font-weight: 300; (OBS: determinada parte do texto poderá ser modificada em "MAIN.CSS")
     vertical-align: baseline;
     text-decoration: none;
-    list-style: none; /*incluso na aula 8, removendo posteriormente o "list-style" de outros elementos à parte" */
+    list-style: none; (OBS: incluso na aula 8, removendo posteriormente o "list-style" de outros elementos à parte) 
 }
 
-body { /*incluso na aula 8*/
+body { ( ------ INCLUSO NA AULA 8 ------ )
     background-image: url('../images/bolha-background.png');
     background-repeat: no-repeat;
     background-position: left center;
-    /* se o design envia uma imagem muito grande, é nosso dever pedir a ele que envie uma imagem com o tamanho reduzido */
+
+    (OBS: se o design envia uma imagem muito grande, é nosso dever pedir a ele que envie uma imagem com o tamanho reduzido)
 }
 
 .container {
@@ -42,3 +48,8 @@ body { /*incluso na aula 8*/
     display: flex;
     flex-direction: row;
 }
+
+-------------------------------------------------------------------------------------------------------- */ 
+
+/* Antes da aula 11: STYLE.CSS = configuraremos nossa configuração PADRÃO do HTML */
+/* PS: poderemos mudar todas essas configurações posteriormente nas outras páginas ".CSS" ou até mesmo no nosso HTML. */

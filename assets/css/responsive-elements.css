@@ -1,0 +1,88 @@
+/* RESPONSIVE ELEMENTS: Pois será o nosso header, o nosso main e o nosso footer */
+
+@media (max-width: 1150px) {
+    .container {
+        width: 950px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 850px;
+    }
+}
+
+
+ /*--------- SE HOUVER A NECESSIDADE DE MELHORAR O LAYOUT -----------
+
+ .sobre-web-design figcaption img {  (código importado do "main.css" e irá substituir as configurações lá estabelecidas).
+    width: 600px;
+}
+
+--------------------------------------------------------------------- */
+
+
+@media (max-width: 915px) {
+    body {
+        background-position: left -250px;
+        background-color: #b1f4ff;
+    } /* se houver a necessidade de jogar a imagem para cima o mantendo na esquerda, basta colocar um número negativo de pixels (px) acompanhado de left */
+
+
+
+    .container {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 665px) {
+    .container {
+        width: 400px;
+    }
+}
+
+/* ------ LEMBRAR DO BREAKPOINT DE 450PX ------ */
+
+    .row {
+    flex-direction: column;
+}
+
+header nav {
+    margin: 30px 0; /* no margin, 30px representa o espaçamento de cima, 0 do lado */
+}
+
+.sobre-web-design article { /* o que estiver dentro de article se destacará em 100% da tela */
+    width: 100%;
+}
+
+
+footer .row { /* VAI INTERFIR DIRETAMENTE NOS ÍCONES DAS REDES SOCIAIS NO RODAPÉ */
+    flex-direction: row; /* vai fazer com que os ícones deixem de ficar em coluna e fiquem um ao lado do outro */
+    justify-content: center; /* vai fazer com que eles saiam do canto inferior esquerdo para o centro da tela */
+}
+
+
+.sobre-web-design figcaption img {
+    width: 100%;
+    margin: 30px 0; /* para que a imagem fique um pouco mais apartada do nosso article */
+}
+
+
+
+
+/* ------ HAVENDO A NECESSIDADE DE DIMINUIR A IMAGEM ------
+Basta copiar e colar aqui o código incluso no "MAIN.CSS":
+
+
+.sobre-web-design figcaption img {
+    width: 600px; <--- ***BASTA APENAS AJUSTAR O NÚMERO ---
+}
+
+
+-----------------------------------------------------------
+
+
+/* Importante ressaltar que o designer será o responsável por nos estabelecer as medidas necessárias */
+/* Com os "frameworks" haverá a facilitação de configurar o responsive */
+

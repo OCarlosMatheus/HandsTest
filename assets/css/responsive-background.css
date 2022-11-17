@@ -1,12 +1,9 @@
-/* ATENÇÃO: arquivo substituído pelo "responsive-background.css" na aula 11 */
-
-/* No "responsive.css" trabalharemos com as tags do breakpoint */
+/* O ARQUIVO "responsive.css foi substituído pelo "responsive-background.css na aula 11 */
+/* No "responsive-background.css" trabalharemos com as tags do breakpoint */
 /* Os breakpoints, literalmente falando, são pontos de interrupção. Analisando pelo contexto da CSS, Media Query e Mobile First, são os pontos que a interface do usuário será adaptada para a nova realidade do tamanho de tela, ou densidade de pixels, por exemplo.*/
 
 /* ------> MAX-WIDTH - QUANDO A TELA DO DISPOSITIVO FOR INFERIOR AO ESTABELECIDO <------*/
 
-
-/*
 
 @media (max-width: 1900px) {
     body {
@@ -26,7 +23,7 @@
     }
 } 
 
-/* TAMANHO DA TELA DO MEU NOTEBOOK 
+/* TAMANHO DA TELA DO MEU NOTEBOOK */
 
 @media (max-width: 1366px) {
     body {
@@ -35,8 +32,6 @@
 }
 
 /* ------------------------------  */
-
-/*
 
 @media (max-width: 1320px) {
     body {
@@ -50,30 +45,26 @@
     }
 }
 
-/* ------ CASO NECESSÁRIO UTILIZAR O "background-position" ------ */
-
-/* EXEMPLO:
-
+@media (max-width: 1024px) {
+    body {
+        background-size: 470px;
+    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     body {
-        background-position-x: 300px; (EIXO X)
+        background-position: -120px -240px;  /* !important retirado, pois devido a organização que foi feita em "style.css", o nosso container deixou de ter prioridade"
+         /* -120px: horizontal e -240px vertical*/
+
+        background-size: 620px;
     }
-} 
+}
+
+/* ------ CASO NECESSÁRIO UTILIZAR O "background-position" ---------
+
 
 PERCEBE-SE que neste caso, as configurações estabelecidas não iriam funcionar pois a configuração padrão estabelecida em "STYLE.CSS" - "background-position: left center;" - irá se sobrepor às das demais páginas.
 Então, neste caso é importante a inclusão de "!important" para que o nosso código possa sobressair ao que foi posto em "STYLE.CSS".
-
-EXEMPLO: 
-
-}
-
-@media (max-width: 1100px) {
-    body {
-        background-position-x: 100px; !important
-    }
-} 
 
  --------------------------------------------------------------- */
 

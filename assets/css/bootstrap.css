@@ -1,0 +1,37 @@
+
+/* BOOTSTRAP.CSS (antiga função do STYLE.CSS) = configuraremos nossa configuração PADRÃO do HTML */
+/* PS: poderemos mudar todas essas configurações posteriormente nas outras páginas ".CSS" ou até mesmo no nosso HTML. */
+
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300; /* OBS: determinada parte do texto poderá ser modificada em "MAIN.CSS" */
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none; /* OBS: incluso na aula 8, removendo posteriormente o "list-style" de outros elementos à parte */
+}
+
+body { /* ------ INCLUSO NA AULA 8 ------ */
+    background-image: url('../images/bolha-background.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    /* OBS: se o design envia uma imagem muito grande, é nosso dever pedir a ele que envie uma imagem com o tamanho reduzido */
+}
+
+.container {
+    width: 1024px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
