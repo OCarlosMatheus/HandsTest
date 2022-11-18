@@ -1,39 +1,49 @@
 /* RESPONSIVE ELEMENTS: Pois será o nosso header, o nosso main e o nosso footer */
 
-@media (max-width: 1150px) {
-    .container {
-        width: 950px;
-    }
-}
-
 @media (max-width: 1024px) {
     .container {
         width: 850px;
     }
-}
 
-
- /*--------- SE HOUVER A NECESSIDADE DE MELHORAR O LAYOUT -----------
-
- .sobre-web-design figcaption img {  (código importado do "main.css" e irá substituir as configurações lá estabelecidas).
-    width: 600px;
-}
-
---------------------------------------------------------------------- */
-
-
-@media (max-width: 915px) {
     body {
-        background-position: left -250px;
-        background-color: #b1f4ff;
-    } /* se houver a necessidade de jogar a imagem para cima o mantendo na esquerda, basta colocar um número negativo de pixels (px) acompanhado de left */
+        background-position: -140px;
+    }
+}
 
-
-
+@media (max-width: 935px) { /* A PARTIR DESSE TAMANHO, PODEREMOS PARTIR PARA UM MODO RESPONSIVO TRABALHAMDO EM COLUNAS */
+                            /* ISTO PORQUE OS ELEMENTOS DA PÁGINA, TAIS COMO OS ITENS DA "<ur>" E O NOSSO LOGO, POR EXEMPLO, PASSARÃO A FICAR MUITO ESPREMIDOS */
+     body {
+        background-position: left top; /* arrastou nossa imagem (bolha) um pouco mais para frente, mantendo-a à esquerda */
+        background-color: #b1f4ff; /* pode ser coletada a partir de: "Inspecionar elemento > element style: "background-color" */
+                                     /* após de escolhida uma cor aleatória, basta clicar no "Seletores de Cores de Alternância" e coletar a cor desejada na página da WEB */
+     }
+                            
     .container {
-        width: 600px;
+        width: 550px;
     }
 
+    .row {
+        flex-direction: column; /* COM ISTO, TUDO O QUE ESTIVER EM "<class=row>" FICARÁ EM COLUNAS QUANDO A RESOLUÇÃO DA TELA FOR DE 935px PARA BAIXO */
+    }
+
+    header nav {
+        margin: 30px 0; /* 20px REPRESENTAM APENAS ESPAÇAMENTO NA ALTURA */
+    }
+
+    .sobre-web-design article { /* o que se encontra dentro de "<section class="row sobre-web-design">;<article>", irá aumentar em 100% ao tamanho da página */
+        width: 100%
+    }
+
+    footer .row {
+        flex-direction: row; /* vai fazer com que os ícones deixem de ficar em coluna e fiquem um ao lado do outro */
+        justify-content: center; /* vai fazer com que eles saiam do canto inferior esquerdo para o centro da tela */
+        
+    }
+
+    .sobre-web-design figcaption img {
+        margin: 30px 0 0 0;
+        width: 100%; /* DIFEFENÇA MÍNIMA NO NOSSO CASO */
+    }
 }
 
 @media (max-width: 665px) {
@@ -42,45 +52,21 @@
     }
 }
 
-/* ------ LEMBRAR DO BREAKPOINT DE 450PX ------ */
-
-    .row {
-    flex-direction: column;
+@media (max-width: 450px) { /* a partir de 450px, será necessário fazer com que nosso menu "<ul>" fique em colunas para se adequar ao restante do layout */
+    .container {
+        width: 300px;
+    }
 }
 
-header nav {
-    margin: 30px 0; /* no margin, 30px representa o espaçamento de cima, 0 do lado */
+/* 320px É O MENOR TAMANHO QUE SE TRABALHA NA RESPONSABILIDADE, SENDO RELATIVO A UM DOS MENORES CELULARES EXISTENTES */
+
+ /*--------- SE HOUVER A NECESSIDADE DE MELHORAR O LAYOUT -----------
+
+ .sobre-web-design figcaption img {  (código importado do "main.css" e irá substituir as configurações lá estabelecidas).
+    width: XXpx;
 }
 
-.sobre-web-design article { /* o que estiver dentro de article se destacará em 100% da tela */
-    width: 100%;
-}
-
-
-footer .row { /* VAI INTERFIR DIRETAMENTE NOS ÍCONES DAS REDES SOCIAIS NO RODAPÉ */
-    flex-direction: row; /* vai fazer com que os ícones deixem de ficar em coluna e fiquem um ao lado do outro */
-    justify-content: center; /* vai fazer com que eles saiam do canto inferior esquerdo para o centro da tela */
-}
-
-
-.sobre-web-design figcaption img {
-    width: 100%;
-    margin: 30px 0; /* para que a imagem fique um pouco mais apartada do nosso article */
-}
-
-
-
-
-/* ------ HAVENDO A NECESSIDADE DE DIMINUIR A IMAGEM ------
-Basta copiar e colar aqui o código incluso no "MAIN.CSS":
-
-
-.sobre-web-design figcaption img {
-    width: 600px; <--- ***BASTA APENAS AJUSTAR O NÚMERO ---
-}
-
-
------------------------------------------------------------
+--------------------------------------------------------------------- */
 
 
 /* Importante ressaltar que o designer será o responsável por nos estabelecer as medidas necessárias */
