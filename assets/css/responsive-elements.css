@@ -54,9 +54,25 @@
 
 @media (max-width: 450px) { /* a partir de 450px, será necessário fazer com que nosso menu "<ul>" fique em colunas para se adequar ao restante do layout */
     .container {
-        width: 300px;
+        width: 290px;
+    }
+
+    header nav {
+        background: #FFF;
+        width: 100%;
+        padding: 10px /*topo*/ 0/*lado*/ 20px; /*baixo*/
+        box-shadow: 0px /*horizontal*/ 10px /*vertical*/ 30px rgba(0, 0, 0, 0.15);
+    }
+
+    header nav ul { /* disponível anteriormente em "header.css" (configurações padrões da nossa header( */
+        flex-direction: column;
+    } 
+
+    header nav ul li {
+        margin: 10px 0;
     }
 }
+
 
 /* 320px É O MENOR TAMANHO QUE SE TRABALHA NA RESPONSABILIDADE, SENDO RELATIVO A UM DOS MENORES CELULARES EXISTENTES */
 

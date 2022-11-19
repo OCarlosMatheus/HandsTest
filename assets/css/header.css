@@ -12,7 +12,7 @@ header nav ul { /* influenciará direto nos itens "home, portifólio, etc", pois
                 /* aqui será possível definir se iremos querer nosso item em coluna, linha e até mesmo remover as "bolinhas" que vêm ao lado dos itens na tag "<ul>" */
 
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* transferido para o "responsive-elements.css" na aula 12 */
     align-items: center;
     /* "list-style: none" pertinente ao menu REMOVIDO */
     /* Isso porque houve a necessidade de incluir o "list-style" nas configurações gerais - "Style.CSS" - na aula 8, para que os "pontos" ao lado dos ícones das redes sociais fossem retirados" */
